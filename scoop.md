@@ -15,25 +15,30 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 If `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` fails, see [Unrestricted PowerShell](powershell.md#unrestricted-powershell) install procedure.
 
+### HTTP proxy install
+
+If access to the Internet is through a HTTP proxy:
+
+* [install Scoop behind a proxy](https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy#installation):
+
+```powershell
+[Net.WebRequest]::DefaultWebProxy = New-Object Net.WebProxy "http://<host>:<port>"
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
+* [configure Scoop to use the proxy](https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy#configuring-scoop-to-use-your-proxy):
+
+```shell
+scoop config proxy <host>:<port>
+```
+
 ### HTTP proxy PAC install
 
 If access to the Internet is through a HTTP proxy configured with PAC:
 
 * [setup a temporary Px](px#temporary-pac-setup) local HTTP proxy handling PAC
-* [install Scoop using the local proxy](https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy#installation):
-
-```powershell
-[Net.WebRequest]::DefaultWebProxy = New-Object Net.WebProxy "http://localhost:3128"
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-```
-
-* [configure Scoop to use the local proxy](https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy#configuring-scoop-to-use-your-proxy):
-
-```shell
-scoop config proxy localhost:3128
-```
-
+* [install Scoop behind a proxy](#http-proxy-install) located at `localhost:3128`
 * [install Px](px#standard-install) using [Scoop](https://scoop.sh)
 * [remove the temporary Px](px#teardown-temporary-setup)
 * [configure PAC and start Px](px#configure-pac-and-start)
