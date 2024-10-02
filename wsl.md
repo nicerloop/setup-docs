@@ -4,7 +4,7 @@
 
 ## Administrative install
 
-/!\ :name_badge: This requires elevated privileges /!\
+:warning: :name_badge: This requires elevated privileges :name_badge: :warning:
 
 [Windows Subsystem for Linux](https://github.com/microsoft/WSL) can be installed using [WinGet](winget.md) and [gsudo](gsudo.md):
 
@@ -12,13 +12,13 @@
 gsudo winget install Microsoft.WSL
 ```
 
-/!\ :repeat: You may have to restart Windows to fully setup the newly enabled features. /!\
+:warning: :repeat: You may have to restart Windows to fully setup the newly enabled features. :repeat: :warning:
 
 Run a first update as described hereafter to check for the latest kernel install.
 
 ## Administrative update
 
-/!\ :name_badge: This requires elevated privileges /!\
+:warning: :name_badge: This requires elevated privileges :name_badge: :warning:
 
 [Windows Subsystem for Linux](https://github.com/microsoft/WSL) can be self updated using [gsudo](gsudo.md):
 
