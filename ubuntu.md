@@ -70,3 +70,11 @@ apt upgrade -y
 exit
 exit
 ```
+
+## Microsoft Store install
+
+[Ubuntu](https://ubuntu.com/desktop/wsl) is available in the [Microsoft Store](https://apps.microsoft.com/) with ID  [9PDXGNCFSCZV](https://apps.microsoft.com/detail/9PDXGNCFSCZV):
+
+```shell
+start ms-windows-store://pdp/?productid=9PDXGNCFSCZV
+```
