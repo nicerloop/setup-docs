@@ -2,6 +2,10 @@
 
 [WinGet](https://github.com/microsoft/winget-cli) is the Windows Package Manager.
 
+## Windows 11
+
+[WinGet](https://github.com/microsoft/winget-cli) is present in standard Windows 11 installations and does not need to be installed.
+
 ## Standard  install
 
 [WinGet](https://github.com/microsoft/winget-cli) can be installed with [Scoop](scoop.md):
