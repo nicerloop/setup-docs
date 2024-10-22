@@ -4,7 +4,7 @@
 
 ## Windows 11
 
-`Windows Terminal` is the default terminal for Windows 11 and does not need to be installed.
+[Windows Terminal](https://github.com/microsoft/terminal) is the default terminal for Windows 11 and does not need to be installed.
 
 ## Scoop install (portable app)
 
