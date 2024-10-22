@@ -22,12 +22,6 @@ start ms-windows-store://pdp/?productid=9P9TQF7MRM4R
 gsudo winget install Microsoft.WSL
 ```
 
-Alternatively, the [Microsoft Store](https://apps.microsoft.com/) version can be installed from the command line:
-
-```shell
-gsudo winget install 9P9TQF7MRM4R
-```
-
 :warning: :repeat: You may have to restart Windows to fully setup the newly enabled features. :repeat: :warning:
 
 Run a first update as described hereafter to check for the latest kernel install.
