@@ -20,7 +20,7 @@ gsudo winget install Oracle.VirtualBox
 
 ### Specific version
 
-If a [specific version](https://www.virtualbox.org/wiki/Download_Old_Builds) is required, for example for compatibility with vagrant, the version parameter can be specified:
+If a [specific version](https://www.virtualbox.org/wiki/Download_Old_Builds) is required, for example for compatibility with [Vagrant](vagrant.md), the version parameter can be specified:
 
 
 ```shell
