@@ -44,10 +44,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 ```shell
 scoop bucket add nicerloop https://github.com/nicerloop/scoop-nicerloop
-scoop config no_junction true
 scoop install nicerloop/pwsh
-scoop hold pwsh
-scoop config no_junction false
 exit
 ```
 
@@ -75,23 +72,23 @@ scoop status
 
 ### Update Unrestricted PowerShell
 
-Install new [Unrestricted PowerShell](https://github.com/nicerloop/pwsh-noexecpolicy) version:
+* download new [Unrestricted PowerShell latest release](https://github.com/nicerloop/pwsh-noexecpolicy/releases/latest) version using [Scoop](https://scoop.sh):
 
 ```shell
-scoop config no_junction true
-scoop config ignore_running_processes true
-scoop unhold pwsh
+scoop download nicerloop/pwsh
+```
+
+In folder `$HOME/scoop/cache`:
+
+* unzip `pwsh#XXX#yyyyyyy.zip`
+* open `pwsh#XXX#yyyyyyy` folder
+* run `pwsh.exe`
+* update [Unrestricted PowerShell](https://github.com/nicerloop/pwsh-noexecpolicy) using [Scoop](https://scoop.sh):
+
+```shell
 scoop update nicerloop/pwsh
-scoop hold pwsh
-scoop config no_junction false
-scoop config ignore_running_processes false
+scoop cleanup --cache nicerloop/pwsh
 exit
 ```
 
-Close all runing instances of the old version of [Unrestricted PowerShell](https://github.com/nicerloop/pwsh-noexecpolicy).
-
-Open a new [Unrestricted PowerShell](https://github.com/nicerloop/pwsh-noexecpolicy) terminal and remove the old version:
-
-```shell
-scoop cleanup --cache nicerloop/pwsh
-```
+* delete `pwsh#XXX#yyyyyyy` folder
