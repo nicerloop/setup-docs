@@ -58,7 +58,7 @@ Ensure you use `pwsh` instead of `powershell` when you use a command line:
 * ![PowerShell black icon](https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/Powershell_black_64.png "PowerShell black icon") `pwsh` is PowerShell (versions 7 and later, previously known as PowerShell Core for version 6)
 * ![PowerShell blue icon](https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/Powershell_64.png "PowerShell blue icon") `powershell` is Windows PowerShell (versions up to 5.1)
 
-You can set `PowerShell` as the defautl profile in [Windows Terminal](windows-terminal.sh).
+You can set `PowerShell` as the default profile in [Windows Terminal](windows-terminal.sh).
 
 ### Check for updated Unrestricted PowerShell
 

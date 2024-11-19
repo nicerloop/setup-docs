@@ -8,7 +8,7 @@
 
 ## Standard install
 
-[Rancher Desktop](https://rancherdesktop.io/) can be installed usign [Scoop](scoop.md):
+[Rancher Desktop](https://rancherdesktop.io/) can be installed using [Scoop](scoop.md):
 
 ```shell
 scoop bucket add extras
