@@ -17,7 +17,10 @@ scoop install main/winget
 ## Package discovery
 
 Many packages are available through [WinGet](https://github.com/microsoft/winget-cli).
-You can browse and search the package repository from the third-party [winstall](https://winstall.app) site.
+You can browse and search the package repository from the third-party site:
+
+* [winstall](https://winstall.app)
+* [wingetCollections](https://winget.ragerworks.com/)
 
 ## Package update
 
