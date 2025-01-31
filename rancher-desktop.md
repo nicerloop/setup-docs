@@ -15,6 +15,16 @@ scoop bucket add extras
 scoop install extras/rancher-desktop
 ```
 
+:warning: Rancher Desktop version 1.16 has changed its network stack and can create difficulties with containers
+
+:warning: Rancher Desktop version 1.17 does not launch when accessed through symlinks as installed through scoop
+
+You can install version 1.15.1 as follows:
+
+```shell
+scoop install extras/rancher-desktop@1.15.1
+```
+
 ## Docker default configuration
 
 Start `Rancher Desktop` and configure it:
